@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Link Viewer",
+  "description": "Google Chrome Extension for improved productivity for surfing the Web. Making popup window with content when mouse over the link.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["core.css"],
+      "js": ["core.js", "jquery-2.1.1.min.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
