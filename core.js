@@ -10,7 +10,7 @@ document.addEventListener('mousemove', function (e) {
   console.log(srcElement.nodeName);
   // Lets check if our underlying element is a DIV.
   if (srcElement.nodeName == 'A') {
-    $(".a_iframe").remove();;
+    $(".a_iframe").remove();
 
     var newdiv = document.createElement("iframe");
     newdiv.setAttribute("class","a_iframe"); newdiv.setAttribute("src", "http://www.w3schools.com");
